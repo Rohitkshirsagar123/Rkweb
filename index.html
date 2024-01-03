@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./img/image/logo.jpeg">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <script src="lettering.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sacramento:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@3.0.0/icons/leetcode.css">
+    <!-- aos effect  -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <title>RK Web</title>
+</head>
+
+<style>
+      
+        #cursorCanvas {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 15000;
+            width: 100%;
+        }
+
+</style>
+<script>
+    // Get the canvas element
+    const canvas = document.getElementById("cursorCanvas");
+
+    // Set the body dimensions to match the canvas dimensions
+    document.body.style.width = canvas.width + "px";
+    document.body.style.height = canvas.height + "px";
+
+    // You can draw on the canvas here
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 100, 100);
+</script>
+<body>
+    <canvas id="cursorCanvas"></canvas>
+    
+    <div class="reload-container">  
+        <div class="word">LOADING...</div>
+    </div>
+     <!-- bubble effect -->
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+        <!-- bubble effect end -->
+
+        <!-- navbar start -->
+        <div class="navbar">
+            <div class="left">
+              <div class="card">
+                <span></span>
+                <a href="#home"><span><h1><b style="color: aqua;">R</b>K</h1></span></a>
+              </div>
+              <div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+              </div>
+            </div>
+            <div class="menu_sec">
+              <ul class="item_sec">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li> <a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+          
+        <!-- navbar end -->
+
+        <!-- landing page start  -->
+
+        <div class="landing_page" id="home" >
+            <div class="land_left" >
+                <h1>Hi! I'm <span style="color: aqua;">Rohit</span> Kshirsagar</h1>
+                <h2>I am a 
+                    <span class="typer" id="main-typer" data-words="Web-Developer, Front-end Developer,Software Engineer" data-delay="100"
+                        data-colors="#08605F,#177E89,#b74033" data-deleteDelay="1000" data-loop="false"></span>
+                    <span class="cursor" data-cursorDisplay="|" data-owner="main-typer"></span>
+                </h2>
+
+
+            <div class="slogan_text">
+                <p>A Web Developer with an In-Depth Grasp of  Web and Software Development, Shaping Digital Solutions for Comprehensive Success</p>
+            </div>
+
+            <div class="social_icon">
+                    <div class="wrapper">
+                        <div class="icon linkedin">
+                            <div class="tooltip">
+                                Linkedin
+                            </div>
+                            <span><a href="http://linkedin.com/in/rohit-kshirsagar-rk" target="_blank"><i class="fab fa-linkedin-in"></i></a></span>
+                        </div>
+
+                        <div class="icon github">
+                            <div class="tooltip">
+                                Github
+                            </div>
+                            <span><a href="https://github.com/Rohitkshirsagar123" target="_blank"><i class="fab fa-github"></i></a></i></span>
+                        </div>
+
+                        <div class="icon hackerrank">
+                            <div class="tooltip">
+                                Hackerrank
+                            </div>
+                            <span><a href="https://www.hackerrank.com/profile/rk9628081"  target="_blank"><i class="fab fa-hackerrank"></i></a></i></span>
+                        </div>
+                        <div class="icon leetcode">
+                            <div class="tooltip">
+                                Leetcode
+                            </div>
+            
+                            <span><a href="https://leetcode.com/Rohit_k123/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg></a></span>
+                        </div>
+                        
+                        <div class="icon mail">
+                            <div class="tooltip">
+                                Gmail
+                            </div>
+                            <span><a href="mailto:rohitkshirsagar262@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></i></span>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="button">
+                <a href="Rohit_Kshirsagar.pdf" download><button onclick="alert('Download CV now')">Download CV</button></a>
+                <a href="mailto:rohitkshirsagar262@gmail.com" target="_blank"><button>Contact</button></a>
+                
+            </div>
+
+                
+
+                        
+            </div>
+            <div class="land_right" >
+                <div class="img" >
+                    <img class="" src="img/rohit.png" alt="">
+                </div>    
+            </div>
+        </div>
+        
+        <!-- landing page end  -->
+
+    <!-- about page section  -->
+        <div id="about" class="about_sec" style="position: relative;">
+            <div class="left_About" data-aos="fade-right"  data-aos-duration="2000">
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                     
+                    <p>
+                        <a><img src="img/r.png">.</a>
+                    </p>
+                </div> 
+            </div>
+           
+            <div class="right_about"  data-aos="fade-left"  data-aos-duration="2000">
+                <div class="content_sec">
+                    <h1>About <span style="color: aqua;">ME</span></h1>
+                    <h2>Frontend Developer / Software Engineer</h2>
+                    <p>Passionate Frontend Developer and Software Engineer with a
+                         strong commitment to crafting elegant,
+                         user-friendly interfaces and building robust, scalable
+                          software solutions to meet diverse business needs</p>
+
+                    <div class="button">
+                    <a href="http://linkedin.com/in/rohit-kshirsagar-rk" target="_blank"><button>Read More</button></a>
+                    
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
+
+        <!-- skill section  -->
+       <div class="sk_sec" id="skills"  >
+            <div class="skill_text_sec">
+                <h1>SKILLS</h1>
+            </div>
+
+            <div class="skill_progress" data-aos="fade-right"  data-aos-duration="2000">
+                <div  class="skill_sec">
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="80">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">HTML</span>
+                    </div>
+                    
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="80">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">CSS</span>
+                    </div>
+            
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="75">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">JavaScript</span>
+                    </div>
+            
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="60">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">React</span>
+                    </div>
+    
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="70">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">Python</span>
+                    </div>
+                   
+    
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="70">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">C++</span>
+                    </div>
+    
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="70">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">C</span>
+                    </div>
+    
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="80">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">Flask</span>
+                    </div>
+    
+                    <div class="parent-skill">
+                        <div class="skill">
+                            <div class="progress" data-progress="75">
+                                <span class="progress-number">0%</span>
+                            </div>
+                        </div>
+                        <span class="title">SQl</span>
+                    </div>
+    
+                </div>
+            </div>
+       </div>
+
+       <!-- experience section  -->
+        
+       <div id="experience" class="experience">
+            <h2 class="title">Experience</h2>
+            <div class="item" data-aos="fade-left">
+                <h1><span>PIBYTHREE </span></h1> 
+                <h3>ASSOCIATE SOFTWARE ENGINEER</h3>
+                <h4>AUG 2022  -  SEP 2023</h4>
+            </div>
+            <div class="item" data-aos="fade-right" data-aos-duration="5000">
+                <h1><span>THE SPARKS FOUNDATION </span></h1> 
+                <h3> WEB DEVELOPER INTERN</h3>
+                <h4>DEC 2021  -  JAN 2022</h4>
+            </div>
+            <div class="item" data-aos="fade-left" data-aos-duration="5000">
+                <h1><span>SKILLVERTEX</span></h1> 
+                <h3> WEB DEVELOPER INTERN</h3>
+                <h4>OCT 2021  –  DEC 2021</h4>
+            </div>
+       </div>
+
+    <!-- project section  -->
+        <div class="portfolio-section" id="project">
+            <div class="container" data-aos="fade-up"  data-aos-duration="2000">
+              <h2 class="title">PROJECT</h2>
+              <span class="hr-role"></span>
+              <div class="portfolio-tab">
+                <ul id="filters" class="clearfix">
+                    <li class="filter active" data-filter=".web_development, .software_development, .games">all</li>
+                    <li class="filter" data-filter=".web_development">web development</li>
+                    <li class="filter" data-filter=".software_development">software development</li>
+                    <li class="filter" data-filter=".games">Game</li>
+                </ul>
+              </div>
+              <div class="portfolio-grid">
+                <div class="portfolio web_development" data-cat="web_development">
+                  <div class="portfolio-wrapper first">
+                    <div class="portfolio-bg"></div>
+                    <div class="label">
+                      <div class="label-text">
+                        <h4>E-COMMERSE WEBSITE [SHOP NOW]</h4>
+                        <span class="text-category">web development</span>
+                        <a href="https://rohitkshirsagar123.github.io/ShopNow/" class="template-btn" target="_blank">View</a>
+                      </div>
+                      <div class="label-bg"> </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio software_development" data-cat="software_development">
+                  <div class="portfolio-wrapper recon">
+                    <div class="portfolio-bg"></div>
+                    <div class="label">
+                      <div class="label-text">
+                        <h4>DATA RECONCILIATION FRAMEWORK</h4>
+                        <span class="text-category">software development</span>
+                      </div>
+                      <div class="label-bg"> </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="portfolio games" data-cat="games">
+                  <div class="portfolio-wrapper third">
+                    <div class="portfolio-bg"></div>
+                    <div class="label">
+                      <div class="label-text">
+                        <h4>BUBBLE GAME IN JS</h4>
+                        <span class="text-category">Game</span>
+                        <a href="https://rohitkshirsagar123.github.io/Bubble-Game-in-JS/" class="template-btn" target="_blank">View</a>
+                      </div>
+                      <div class="label-bg"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio software_development" data-cat="software_development">
+                  <div class="portfolio-wrapper ingest">
+                    <div class="portfolio-bg"></div>
+                    <div class="label">
+                      <div class="label-text">
+                        <h4>DATA INGESTION TOOL</h4>
+                        <span class="text-category">software development</span>
+                      </div>
+                      <div class="label-bg"> </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio web_development" data-cat="web_development">
+                  <div class="portfolio-wrapper fourth">
+                    <div class="portfolio-bg"></div>
+                    <div class="label">
+                      <div class="label-text">
+                        <h4>TO DO REACT APP</h4>
+                        <span class="text-category">web development</span>
+                        <a href="https://rktodoapp.netlify.app/" class="template-btn" target="_blank">View</a>
+                      </div>
+                      <div class="label-bg"> </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="portfolio web_development" data-cat="web_development">
+                    <div class="portfolio-wrapper five">
+                      <div class="portfolio-bg"></div>
+                      <div class="label">
+                        <div class="label-text">
+                          <h4>PLACEMENT PREPEATION WEBSITE</h4>
+                          <span class="text-category">web development</span>
+                          <a href="https://learnitpre.pythonanywhere.com/" class="template-btn" target="_blank">View</a>
+                        </div>
+                        <div class="label-bg"> </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="portfolio web_development" data-cat="web_development">
+                    <div class="portfolio-wrapper quiz">
+                      <div class="portfolio-bg"></div>
+                      <div class="label">
+                        <div class="label-text">
+                          <h4>QUIZ APP</h4>
+                          <span class="text-category">web development</span>
+                          <a href="https://rohitkshirsagar123.github.io/JAVASCRIPT_QUIZ_APP/" class="template-btn" target="_blank">View</a>
+                        </div>
+                        <div class="label-bg"> </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="portfolio web_development" data-cat="web_development">
+                    <div class="portfolio-wrapper product">
+                      <div class="portfolio-bg"></div>
+                      <div class="label">
+                        <div class="label-text">
+                          <h4>PRODUCT SEARCH ENGINE </h4>
+                          <span class="text-category">web development</span>
+                          <a href="https://rohitkshirsagar123.github.io/Product_Search_engine/" class="template-btn" target="_blank">View</a>
+                        </div>
+                        <div class="label-bg"> </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="portfolio software_development" data-cat="software_development">
+                    <div class="portfolio-wrapper lib">
+                      <div class="portfolio-bg"></div>
+                      <div class="label">
+                        <div class="label-text">
+                          <h4>LIBERARY MANAGEMENT IN PYTHON</h4>
+                          <span class="text-category">software development</span>
+                          <a href="https://github.com/Rohitkshirsagar123/liberary-with-python/blob/main/liberary.py" class="template-btn" target="_blank">View</a>
+                        </div>
+                        <div class="label-bg"> </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+     <!-- contact section -->
+    <div id="contact" >
+        <div class="container">
+        <h2>Contact<span class="text-danger"> Us</span></h2>
+        <p>Email us and keep upto date with our latest news</p>
+        <div class="contact-form">
+
+                    <!-- First grid -->
+            <div  data-aos="fade-right"  data-aos-duration="2000">
+            <i class="bi bi-geo-alt-fill set_icon"></i><span class="form-info"> Malshiras,Solapur,Maharashtra</span><br>
+            <i class="bi bi-telephone set_icon"></i> <span class="form-info"> +91 8408830283</span><br>
+            <i class="bi bi-envelope mx-2 set_icon"></i><span class="form-info">  rohitkshirsagar262@gmail.com</span>
+            </div>
+                
+                    <!-- second grid -->
+            <div  data-aos="fade-left"  data-aos-duration="2000">          
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Last Name"><br>
+                <input type="Email" placeholder="Email" required><br>
+                <input type="text" placeholder="Subject of this message"><br>
+                <textarea  placeholder="Message" rows="5" required></textarea><br>
+                <button class="submit" onsubmit="">Send Message</button> 
+            </form>   
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer bg-dark text-center" >
+        <h4>Created By Rohit kshirsagar @ 2024 All Rights Reserved!</h4>
+    </div>
+
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <!-- aos call -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
+ 
+
+    <script src="index.js"></script>
+
+      
+
+    
+
+</body>
+</html>
