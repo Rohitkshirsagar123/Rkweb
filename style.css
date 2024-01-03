@@ -1618,6 +1618,10 @@ img {
     color: #FFF;
 }
 
+.navbar .left .card {
+  margin: 6px;
+}
+
 }
 
 
