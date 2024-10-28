@@ -334,11 +334,22 @@ body {
     align-items: center;
   }
 
-  .land_left{
+  /* .land_left{
+    width: 500px;
+    padding: 10px;
+  } */
+
+  .land_left {
+    /* display: grid; */
+    position: end;
+    /* position: absolute; */
     width: 500px;
     /* height: 400px; */
     padding: 10px;
-  }
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
   .land_left h1{
     font-size: 35px;
     word-spacing: 4px;
@@ -576,10 +587,8 @@ body {
     
   } */
 
-  .land_right img {
-    /* border: 1px solid white; */
+  /* .land_right img {
     border-radius: 20px;
-    /* background-color: red; */
     position: relative;
     width: auto;
     height: 500px;
@@ -594,7 +603,29 @@ body {
     box-shadow: 0 0 10px rgba(255, 0, 255, 0.5),
       0 0 20px rgba(255, 0, 255, 0.5),
       0 0 40px rgba(255, 0, 255, 0.5);
-  }
+  } */
+
+  .land_right img {
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    /* background-color: red; */
+    position: relative;
+    padding-top: 100px;
+    /* top: 88%; */
+    width: auto;
+    height: 640px;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 150px;
+    /* margin-left: 205px; */
+    /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; */
+    /* background-image: linear-gradient(to right, #900b77, #900089, #8c009e, #820db4, #6e1ecc); */
+    /* box-shadow: 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.5); */
+}
+
+
 
   
 
@@ -747,6 +778,7 @@ img {
     /* height: 400px; */
     padding: 20px;
     /* text-align: center; */
+    margin-left: 80px;
 
   }
   .right_about h1{
@@ -1141,6 +1173,16 @@ img {
     
   }
 
+  .curr .portfolio-bg{
+    background-image: url('img/image/currency.webp');
+    
+  }
+
+  .DevHelperAI .portfolio-bg{
+    background-image: url('img/image/devhelper.jpeg');
+    
+  }
+
   .fourth .portfolio-bg{
     background-image: url('img/image/todo.jpeg');
     
@@ -1425,12 +1467,17 @@ img {
     .land_left {
       width: 560px;
       padding: 10px;
+      margin-left: 10px;
   }
+
+
+  
   
   
   .land_right img {
     
       height: 390px;
+      margin-top: 10px;
       
   }
 
@@ -1466,8 +1513,12 @@ img {
        /* top: 140vh; */
     }
 
-  }
 
+    .right_about .content_sec {
+   
+      margin-left: 0px;
+  }
+}
   
   @media only screen and (max-width: 799px) {
 
@@ -1489,6 +1540,8 @@ img {
         width: 560px;
         padding: 10px;
         text-align: center;
+        margin-left: 0px;
+    margin-top: 0px;
     }
 
     .button {
@@ -1559,6 +1612,11 @@ img {
         /* height: 400px; */
         padding: 10px;
     }
+
+    .land_right img {
+      height: 390px;
+      margin-top: 10px;
+  }
 
     .about_sec {
         /* top: 90vh; */
