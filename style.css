@@ -1161,6 +1161,9 @@ img {
   .portfolio:hover .portfolio-bg{
     transform: scale(1.2)
   }
+  .zero .portfolio-bg{
+    background-image: url('img/image/jobtrackly.png');
+  }
   .first .portfolio-bg{
     background-image: url('img/image/ecommerce.png');
     
